@@ -22,6 +22,7 @@ function divHover(userReq) {
 // if userreq is 8, it creates 64 squares, adds teh rigth class and appends them
 // it then uses 1420px and 700px to calculate css grid code
 function buildSquare(userReq) {
+
   for (let i = 0; i < (userReq * userReq); i++) {
     let newDiv = document.createElement("div")
     newDiv.classList.add("bigDivs")
