@@ -27,13 +27,13 @@ function buildSquare(userReq) {
     newDiv.classList.add("bigDivs")
     containerT.appendChild(newDiv)
 
-    columnsStyle = (1420 / userReq) + "px"
+    columnsStyle = ((window.screen.width - 20) / userReq) + "px"
     let columnsStyleComb = ''
     for (let i = 0; i < userReq; i++) {
       columnsStyleComb = columnsStyleComb + columnsStyle.toString() + " "}
     containerT.style.gridTemplateColumns = columnsStyleComb;
 
-    rowsStyle = (700 / userReq) + "px"
+    rowsStyle = (window.screen.length - 20 / userReq) + "px"
     let rowsStyleComb = ''
     for (let i = 0; i < userReq; i++) {
       rowsStyleComb = rowsStyleComb + rowsStyle.toString() + " "    }
